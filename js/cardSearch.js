@@ -5,13 +5,11 @@ function cardSearch() {
   var cardLen = cardContent.length;
 
   for (var i = 0; i < cardLen; i++) {
-    var cardText = cardContent[i].innerText.toLowerCase();
-    var searchValue = searchValue.toLowerCase();
+    var cardText = cardContent[i].innerText;
+    var searchValue = searchValue;
 
-    if (searchValue !== null)
-      if (cardText.indexOf(searchValue) !== -1)
-        card[i].style.display = 'block';
-      else card[i].style.display = 'none';
+    if (cardText.indexOf(searchValue) !== -1)
+      card[i].style.display = 'block';
+    else card[i].style.display = 'none';
   }
-
 }
