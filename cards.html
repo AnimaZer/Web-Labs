@@ -21,10 +21,10 @@
       <div class="box">
         <div class="field has-addons">
           <div class="control is-expanded">
-            <input class="input has-text-centered" type="search" placeholder="search">
+            <input class="input has-text-centered" id="search" type="search" placeholder="search" onchange="cardSearch()">
           </div>
           <div class="control">
-            <a class="button is-info">Search</a>
+            <a class="button is-info" onclick="cardSearch()">Search</a>
           </div>
         </div>
       </div>
@@ -354,6 +354,7 @@
   </div>
 
   <script src="js/bulma.js"></script>
+  <script src="js/cardSearch.js"></script>
 
 
 </body>
