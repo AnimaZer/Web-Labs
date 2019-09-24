@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <title>Todo app</title>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="vendors/bootstrap/css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -16,9 +10,19 @@
       <div class="row">
         <div class="col-xs-12">
           <h1>TODO APP</h1>
-          <input type="checkbox" id="completeAll">
+          <input type="checkbox" id="completeAll" value="completeAll">
+          <label for="completeAll" id="crossedAll">Выполнить все</label>
           <input class="form-control" id="textarea" placeholder="New task text">
           <button id="button" type="submit" class="btn btn-primary">Add</button>
+
+         <input type="radio" id="showAll" value="showAll" name="options" checked>
+         <label for="showAll">All</label>
+
+         <input type="radio" id="showActive" value="showActive" name="options">
+         <label for="showActive">Active</label>
+         
+         <input type="radio" id="showCompleted" value="showCompleted" name="options">
+         <label for="showCompleted">Completed</label>
           <div id="container-to-do"></div>
         </div>
       </div>
