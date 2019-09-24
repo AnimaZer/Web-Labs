@@ -13,7 +13,7 @@ window.onload = function () {
     var label = document.createElement('label');
     var check = document.createElement('input');
     check.setAttribute('type', 'checkbox');
-    check.classList.add('checkbox');
+    check.classList.add('checkBoxs');
     label.classList.add('labels');
     label.append(check);
     newTask.append(label);
@@ -29,7 +29,11 @@ window.onload = function () {
     // complete task
     // TODO: labeled - not valid name for CSS and context
     check.onclick = function () {
-      label.classList.toggle('labeled');
+      label.classList.toggle('crossed');
+      if (document.getElementById('showActive').checked==true)
+        showActive.onclick();
+      if (document.getElementById('showCompleted').checked==true)
+        showCompleted.onclick();
     };
 
     // TODO: delete task event
@@ -38,18 +42,55 @@ window.onload = function () {
     };
   };
 
-  completeAll.onclick = function () {
-    var checkAll = document.getElementById('completeAll');
-    var checkbox = document.getElementsByClassName('checkbox');
-    var labels = document.querySelectorAll('.labels');
+  var checkAll = document.getElementById('completeAll');
+  var labelAll = document.getElementById('crossed');
+  var checkBoxs = document.getElementsByClassName('checkBoxs');
+  var labels = document.querySelectorAll('.labels');
 
+  completeAll.onclick = function () 
+  {
     for (var i=0; i<labels.length; i++){
-      labels[i].classList.toggle('labeled');
-      checkbox[i].checked=checkAll.checked;  
+      labels[i].classList.toggle('crossed');
+      checkBoxs[i].checked=checkAll.checked;  
     };
+    if (document.getElementById('showActive').checked==true)
+      showActive.onclick();
+    if (document.getElementById('showCompleted').checked==true)
+      showCompleted.onclick();
+  };
+  
+  showAll.onclick = function ()
+  {
+    for (var i=0; i<labels.length; i++)
+    {
+      document.getElementsByClassName('new checkbox')[i].style.display = 'block';
+    };
+  };
 
+  showActive.onclick = function ()
+  {
+    for (var i=0; i<labels.length; i++)
+    {
+      if (checkBoxs[i].checked == true)
+      {
+        document.getElementsByClassName('new checkbox')[i].style.display = 'none';
+      } else{
+        document.getElementsByClassName('new checkbox')[i].style.display = 'block';
+      };
+    };
+  };
 
-  } 
+  showCompleted.onclick = function ()
+  {
+    for (var i=0; i<labels.length; i++)
+    {
+      if (checkBoxs[i].checked == false)
+      {
+        document.getElementsByClassName('new checkbox')[i].style.display = 'none';
+      } else{
+        document.getElementsByClassName('new checkbox')[i].style.display = 'block';
+      };
+  };
 };
-
+};
 };
