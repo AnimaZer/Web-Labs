@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Calendar</title>
+</head>
+
+<body>
+  <span class="calendar">
+    <header class="calendar-head">
+      <div class="calendar-month"><strong>October</strong> 2019</div>
+      <div class="calendar-weekday-names">
+        <div class="calendar-day-name weekday item">
+          Mon
+        </div>
+        <div class="calendar-day-name weekday item">
+          Tue
+        </div>
+        <div class="calendar-day-name weekday item">
+          Wed
+        </div>
+        <div class="calendar-day-name weekday item">
+          Thu
+        </div>
+        <div class="calendar-day-name weekday item">
+          Fri
+        </div>
+        <div class="calendar-day-name weekday holiday item">
+          Sat
+        </div>
+        <div class="calendar-day-name weekday holiday item">
+          Sun
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="calendar-day other-month item"><span>30 Sep</span></div>
+      <div class="calendar-day item"><span onclick="typicalDay()"></span>1</span></div>
+      <div class="calendar-day item"><span>2</span></div>
+      <div class="calendar-day item"><span>3</span></div>
+      <div class="calendar-day item"><span>4</span></div>
+      <div class="calendar-day item holiday"><span>5</span></div>
+      <div class="calendar-day item holiday"><span>6</span></div>
+      <div class="calendar-day item"><span>7</span></div>
+      <div class="calendar-day item"><span>8</span></div>
+      <div class="calendar-day item"><span>9</span></div>
+      <div class="calendar-day item"><span>10</span></div>
+      <div class="calendar-day item"><span>11</span></div>
+      <div class="calendar-day item holiday"><span>12</span></div>
+      <div class="calendar-day item holiday"><span>13</span></div>
+      <div class="calendar-day item"><span>14</span></div>
+      <div class="calendar-day item"><span>15</span></div>
+      <div class="calendar-day item"><span>16</span></div>
+      <div class="calendar-day item"><span>17</span></div>
+      <div class="calendar-day item"><span>18</span></div>
+      <div class="calendar-day item holiday"><span>19</span></div>
+      <div class="calendar-day item holiday"><span>20</span></div>
+      <div class="calendar-day item"><span>21</span></div>
+      <div class="calendar-day item"><span>22</span></div>
+      <div class="calendar-day item"><span>23</span></div>
+      <div class="calendar-day item"><span>24</span></div>
+      <div class="calendar-day item"><span>25</span></div>
+      <div class="calendar-day item holiday"><span>26</span></div>
+      <div class="calendar-day item holiday"><span>27</span></div>
+      <div class="calendar-day item"><span>28</span></div>
+      <div class="calendar-day item"><span>29</span></div>
+      <div class="calendar-day item"><span>30</span></div>
+      <div class="calendar-day item"><span>31</span></div>
+      <div class="calendar-day item other-month"><span>1 Nov</span></div>
+      <div class="calendar-day item other-month holiday"><span>2</span></div>
+      <div class="calendar-day item other-month holiday"><span>3</span></div>
+      <div class="calendar-day item other-month"><span>4</span></div>
+      <div class="calendar-day item other-month"><span>5</span></div>
+      <div class="calendar-day item other-month"><span>6</span></div>
+      <div class="calendar-day item other-month"><span>7</span></div>
+      <div class="calendar-day item other-month"><span>8</span></div>
+      <div class="calendar-day item other-month holiday"><span>9</span></div>
+      <div class="calendar-day item other-month holiday"><span>10</span></div>
+    </main>
+  </span>
+  <footer>
+    <label for="themeSelector">Calendar theme:</label>
+    <select id="themeSelector" onchange="themeSelector()">
+      <option value="Light">Light</option>
+      <option value="Dark">Dark</option>
+    </select>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

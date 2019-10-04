@@ -1,7 +1,7 @@
-window.onload = function() {
+window.onload = function () {
   var txtArea = document.getElementById('textarea');
 
-  txtArea.onkeydown = function(e) {
+  txtArea.onkeydown = function (e) {
     // add element to UI
     if (txtArea.value !== '' && e.keyCode === 13) {
       var taskContent = txtArea.value;
@@ -23,14 +23,14 @@ window.onload = function() {
       newTask.append(icon);
       txtArea.value = '';
 
-      check.onclick = function() {
+      check.onclick = function () {
         label.classList.toggle('crossed');
         if (document.getElementById('showCompleted').checked)
           onclick.showCompleted();
       };
 
       // TODO: delete task event
-      icon.onclick = function(event) {
+      icon.onclick = function (event) {
         if (!event.currentTarget.parentElement.classList.contains('deleted')) {
           event.currentTarget.parentElement.style.display = 'none';
         }
@@ -43,7 +43,7 @@ window.onload = function() {
     var checkBoxs = document.getElementsByClassName('checkBoxs');
     var labels = document.querySelectorAll('.labels');
 
-    completeAll.onclick = function() {
+    completeAll.onclick = function () {
       for (var i = 0; i < labels.length; i++) {
         if (checkAll.checked) labels[i].classList.add('crossed');
         else labels[i].classList.remove('crossed');
@@ -53,13 +53,13 @@ window.onload = function() {
         onclick.showCompleted();
     };
 
-    showCompleted.onclick = function() {
+    showCompleted.onclick = function () {
       for (var i = 0; i < labels.length; i++) {
         if (
           !checkBoxs[i].checked ||
           document
             .getElementsByClassName('new checkbox')
-            [i].classList.contains('deleted')
+          [i].classList.contains('deleted')
         ) {
           document.getElementsByClassName('new checkbox')[i].style.display =
             'none';
@@ -70,12 +70,12 @@ window.onload = function() {
       }
     };
 
-    showAll.onclick = function() {
+    showAll.onclick = function () {
       for (var i = 0; i < labels.length; i++) {
         if (
           !document
             .getElementsByClassName('new checkbox')
-            [i].classList.contains('deleted')
+          [i].classList.contains('deleted')
         ) {
           document.getElementsByClassName('new checkbox')[i].style.display =
             'block';
@@ -86,12 +86,12 @@ window.onload = function() {
       }
     };
 
-    showDeleted.onclick = function() {
+    showDeleted.onclick = function () {
       for (var i = 0; i < labels.length; i++) {
         if (
           document
             .getElementsByClassName('new checkbox')
-            [i].classList.contains('deleted')
+          [i].classList.contains('deleted')
         ) {
           document.getElementsByClassName('new checkbox')[i].style.display =
             'block';

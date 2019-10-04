@@ -1,78 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>todos</title>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-  </head>
 
-  <body>
-    <section class="todoapp">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-            <header class="header">
-              <h1>TODO APP</h1>
-              <input
-                class="new-todo"
-                id="textarea"
-                placeholder="New task text"
-                autofocus
-                type="text"
-              />
-            </header>
-            <div class="main">
-              <input id="completeAll" class="completeAll" type="checkbox" />
-              <label for="completeAll">Mark all as complete</label>
-              <div id="container-to-do" class="todo-list"></div>
+<head>
+  <title>todos</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+
+<body>
+  <section class="todoapp">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <header class="header">
+            <h1>TODO APP</h1>
+            <input class="new-todo" id="textarea" placeholder="New task text" autofocus type="text" />
+          </header>
+          <div class="main">
+            <input id="completeAll" class="completeAll" type="checkbox" />
+            <label for="completeAll">Mark all as complete</label>
+            <div id="container-to-do" class="todo-list"></div>
+          </div>
+
+          <div class="options-box">
+            <div class="option-section filter-section">
+              <label for="showAll" class="option-button">
+                <input type="radio" id="showAll" value="showAll" name="options" checked class="toggle filter-btn" />
+                All
+              </label>
+
+              <label for="showCompleted" class="option-button">
+                <input type="radio" id="showCompleted" value="showCompleted" name="options" class="toggle filter-btn" />
+                Completed
+              </label>
+
+              <label for="showDeleted" class="option-button">
+                <input type="radio" id="showDeleted" value="showDeleted" name="options" class="toggle filter-btn" />
+                Deleted
+              </label>
             </div>
 
-            <div class="options-box">
-              <div class="option-section filter-section">
-                <label for="showAll" class="option-button">
-                  <input
-                    type="radio"
-                    id="showAll"
-                    value="showAll"
-                    name="options"
-                    checked
-                    class="toggle filter-btn"
-                  />
-                  All
-                </label>
-
-                <label for="showCompleted" class="option-button">
-                  <input
-                    type="radio"
-                    id="showCompleted"
-                    value="showCompleted"
-                    name="options"
-                    class="toggle filter-btn"
-                  />
-                  Completed
-                </label>
-
-                <label for="showDeleted" class="option-button">
-                  <input
-                    type="radio"
-                    id="showDeleted"
-                    value="showDeleted"
-                    name="options"
-                    class="toggle filter-btn"
-                  />
-                  Deleted
-                </label>
-              </div>
-
-              <div class="option-section"></div>
-            </div>
+            <div class="option-section"></div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <script src="js/app.js"></script>
-  </body>
+  <script src="js/app.js"></script>
+</body>
+
 </html>

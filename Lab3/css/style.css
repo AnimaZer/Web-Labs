@@ -1,0 +1,123 @@
+body {
+  margin: auto;
+  width: 60%;
+}
+.calendar {
+  font-family: "Montserrat", sans-serif;
+  background: #dedede;
+  height: auto;
+  padding: 2px;
+  display: grid;
+  width: 100%;
+}
+
+.calendar-head {
+  height: auto;
+  width: calc(100% - 2px);
+  background: white;
+  margin: 1px;
+}
+
+.calendar-month {
+  font-size: 24px;
+  padding: 10px;
+  padding-bottom: 0;
+  background: white;
+}
+
+.weekday {
+  width: calc(100% / 7 - 22px);
+  position: relative;
+}
+
+.calendar-day {
+  height: 60px;
+  background: white;
+  margin: 1px;
+  width: calc(100% / 7 - 22px);
+  position: relative;
+}
+
+.calendar-day,
+.weekday {
+  float: left;
+  text-align: right;
+  padding: 10px;
+}
+
+.calendar-day.weekday {
+  width: calc(100% / 7 - 22px);
+  margin: 1px;
+}
+
+.calendar-day.weekday,
+.holiday {
+  background: white;
+  color: #b5b5b5;
+}
+
+.calendar-day.holiday {
+  background: #ededed;
+  color: #a76666;
+}
+
+.calendar-day.other-month {
+  color: #a09e9e;
+}
+
+.calendar-day.holiday.other-month {
+  color: #9c7d7d;
+}
+/* DARKMODE ONN */
+.calendar-day.calendar-dark {
+  background: #4f4f4f;
+  color: #ededed;
+}
+
+.calendar.calendar-dark {
+  background: black;
+}
+
+.calendar-head.calendar-dark {
+  background: #4f4f4f;
+}
+
+.calendar-month.calendar-dark,
+.weekday.calendar-dark {
+  background: #4f4f4f;
+  color: #ededed;
+}
+
+.calendar-weekday-names.calendar-dark {
+  background: black;
+}
+
+.calendar-day.calendar-dark {
+  background: #4f4f4f;
+  color: #ededed;
+}
+
+.calendar-day.holiday.calendar-dark {
+  background: #5e5e5e;
+  color: #adadad;
+}
+.weekday.calendar-dark {
+  background: #4f4f4f;
+  color: #ededed;
+}
+.calendar-day.other-month.calendar-dark {
+  color: #706f6f;
+}
+
+.weekday.holiday.calendar-dark {
+  background: #4f4f4f;
+  color: #ff4040;
+}
+/* DARKMODE OFF */
+.today span {
+  width: 100%;
+  background: #f33232;
+  padding: 3px 6px;
+  border-radius: 100%;
+  color: #fff;
+}
