@@ -1,12 +1,3 @@
-window.onload = function () {
-  var date = new Date();
-  var dateDay = date.getDate();
-  var days = document.querySelectorAll(".calendar-day");
-  for (var i = 1; i <= days.length; i++) {
-    if (dateDay == i) days[i].classList.add("today");
-  }
-};
-
 function typicalDay() {
   alert("This Is just a typical day");
 }
