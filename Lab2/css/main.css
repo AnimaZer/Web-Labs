@@ -115,7 +115,7 @@ body {
   border-top: 1px solid #e6e6e6;
 }
 
-#completeAll {
+.complete-all {
   width: 1px;
   height: 1px;
   border: none; /* Mobile Safari */
@@ -125,7 +125,7 @@ body {
   bottom: 100%;
 }
 
-.completeAll + label {
+.complete-all + label {
   width: 30px;
   height: 55px;
   font-size: 0;
@@ -136,14 +136,14 @@ body {
   transform: rotate(90deg);
 }
 
-.completeAll + label:before {
+.complete-all + label:before {
   content: "❯";
   font-size: 40px;
   color: #e6e6e6;
   padding: 10px 27px 10px 27px;
 }
 
-.completeAll:checked {
+.complete-all:checked {
   color: #4d4d4d;
 }
 
@@ -318,19 +318,6 @@ label {
   border-color: rgba(175, 47, 47, 0.2);
 }
 
-/* .clear-completed,
-html .clear-completed:active {
-  float: right;
-  position: relative;
-  line-height: 20px;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.clear-completed:hover {
-  text-decoration: underline;
-} */
-
 .info {
   margin: 65px auto 0;
   color: #bfbfbf;
@@ -387,4 +374,8 @@ html .clear-completed:active {
 .add-button:hover {
   color: black;
   transition: 250ms color;
+}
+
+.filter-btn{
+  display: none;
 }
