@@ -70,7 +70,7 @@ body {
 }
 /* DARKMODE ONN */
 .calendar-day.calendar-dark {
-  background: #4f4f4f;
+  background: #444444;
   color: #ededed;
 }
 
@@ -79,12 +79,12 @@ body {
 }
 
 .calendar-head.calendar-dark {
-  background: #4f4f4f;
+  background: #444444;
 }
 
 .calendar-month.calendar-dark,
 .weekday.calendar-dark {
-  background: #4f4f4f;
+  background: #444444;
   color: #ededed;
 }
 
@@ -93,16 +93,16 @@ body {
 }
 
 .calendar-day.calendar-dark {
-  background: #4f4f4f;
+  background: #444444;
   color: #ededed;
 }
 
 .calendar-day.holiday.calendar-dark {
-  background: #5e5e5e;
+  background: #555555;
   color: #adadad;
 }
 .weekday.calendar-dark {
-  background: #4f4f4f;
+  background: #444444;
   color: #ededed;
 }
 .calendar-day.other-month.calendar-dark {
@@ -110,7 +110,7 @@ body {
 }
 
 .weekday.holiday.calendar-dark {
-  background: #4f4f4f;
+  background: #444444;
   color: #ff4040;
 }
 /* DARKMODE OFF */
