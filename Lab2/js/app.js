@@ -12,7 +12,7 @@ window.onload = function() {
       var label = document.createElement('label');
       var check = document.createElement('input');
       check.setAttribute('type', 'checkbox');
-      check.classList.add('checkBoxs', 'toggle');
+      check.classList.add('check-boxs', 'toggle');
       label.classList.add('labels');
       label.append(check);
       newTask.append(label);
@@ -37,9 +37,9 @@ window.onload = function() {
     }
 
 
-    var checkBoxs = document.getElementsByClassName('checkBoxs');
+    var checkBoxs = document.getElementsByClassName('check-boxs');
     var labels = document.querySelectorAll('.labels');
-
+    var completeAll = document.getElementById('complete-all');
     completeAll.onclick = function() {
       var checkAll = document.getElementById('completeAll');
       for (var i = 0; i < labels.length; i++) {
@@ -48,7 +48,7 @@ window.onload = function() {
         checkBoxs[i].checked = checkAll.checked;
       }
     };
-
+    var showCompleted = document.getElementById('show-completed');
     showCompleted.onclick = function() {
       for (var i = 0; i < labels.length; i++) {
         if (!checkBoxs[i].checked || document.getElementsByClassName('new checkbox')[i].classList.contains('deleted')) {
@@ -58,7 +58,7 @@ window.onload = function() {
         }
       }
     };
-
+    var showAll = document.getElementById('show-all');
     showAll.onclick = function() {
       for (var i = 0; i < labels.length; i++) {
         if (!document.getElementsByClassName('new checkbox')[i].classList.contains('deleted')) {
@@ -68,7 +68,7 @@ window.onload = function() {
         }
       }
     };
-
+    var ShowDeleted = document.getElementById('show-deleted');
     showDeleted.onclick = function() {
       for (var i = 0; i < labels.length; i++) {
         if (document.getElementsByClassName('new checkbox')[i].classList.contains('deleted')) {
