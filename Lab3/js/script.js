@@ -3,13 +3,13 @@ window.onload = function () {
   var dateDay = date.getDate();
   var days = document.querySelectorAll('.calendar-day');
   for (var i = 1; i <= days.length; i++) {
-    if (dateDay == i) days[i].classList.add('today');
+    if (dateDay == i+1) days[i].classList.add('today');
   }
 };
 
 
 function themeSelector() {
-  var calendarTheme = document.getElementById('themeSelector');
+  var calendarTheme = document.getElementById('theme-selector');
   var calendarElements = document.getElementsByClassName('calendar-item');
   if (calendarTheme.value == 'Dark') {
     for (var i = 0; i < calendarElements.length; i++) {

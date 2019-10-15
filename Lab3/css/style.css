@@ -62,12 +62,7 @@ body {
   color: #b5b5b5;
 }
 
-/* dark theme styles start */
-.calendar-day-name.calendar-dark {
-  background: #4f4f4f;
-  color: #ededed;
-}
-
+/* DARK MODE ON */
 .calendar-block.calendar-dark {
   background: black;
 }
@@ -76,16 +71,11 @@ body {
   background: #4f4f4f;
 }
 
-.calendar-month.calendar-dark {
-  background: #4f4f4f;
-  color: #ededed;
-}
-
 .calendar-weekday-block.calendar-dark {
   background: black;
 }
 
-.calendar-day.calendar-dark {
+.calendar-day.calendar-dark, .calendar-month.calendar-dark, .calendar-day-name.calendar-dark {
   background: #4f4f4f;
   color: #ededed;
 }
@@ -103,7 +93,7 @@ body {
   background: #4f4f4f;
   color: #ff4040;
 }
-/* dark theme styles end */
+/* DARK MODE OFF */
 
 .calendar-holiday {
   font-size: 0.55em;
