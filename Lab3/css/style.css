@@ -63,16 +63,12 @@ body {
 }
 
 /* DARK MODE ON */
-.calendar-block.calendar-dark {
+.calendar-block.calendar-dark, .calendar-weekday-block.calendar-dark {
   background: black;
 }
 
 .calendar-head.calendar-dark {
   background: #4f4f4f;
-}
-
-.calendar-weekday-block.calendar-dark {
-  background: black;
 }
 
 .calendar-day.calendar-dark, .calendar-month.calendar-dark, .calendar-day-name.calendar-dark {
