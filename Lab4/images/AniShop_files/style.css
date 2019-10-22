@@ -1,0 +1,81 @@
+body{
+  margin: 0px;
+}
+.container {
+  /* padding: 50px; */
+  background: #e0e0e0;
+}
+
+.container a, a:visited{
+  color: #dfd770;
+  text-decoration: none;
+}
+
+.flex-block{
+  padding: 10px;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: flex-end;
+  background: #4e4e4e;
+}
+
+header #store-logo img, #store-basket img, strong{
+  font-size: 50px;
+  background-size: cover;
+  width: 70px;
+  height: 70px;
+}
+
+#store-search input{
+  font-size: 20px;
+  margin-bottom: 30px;
+  width: 800px;
+  /* height: 20px; */
+}
+
+#store-search button{
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+#store-menu{
+  font-size: 40px;
+  width: 320px;
+  /* height: 500px; */
+  float: left;
+  margin-right: 100px;
+  background: #4e4e4e;
+  border-radius: 5px;
+  /* white-space: pre-line; */
+  position: fixed;
+}
+
+#store-menu strong{
+  color:#54e45b;
+  font-size: 40px;
+}
+
+#store-menu nav, a{
+  padding: 20px;
+}
+
+.store-goods{
+  margin-left: 350px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.store-item img{
+  max-width: 300px;
+  padding: 10px;
+  margin-bottom: 30px;
+  flex-basis: 25%;
+  border: #737373 1px solid;
+}

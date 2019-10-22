@@ -1,0 +1,55 @@
+.container{
+  width: 900px;
+  margin: auto;
+  background: #afafaf;
+  border: #000000 1px solid;
+  padding: 5px;
+  font-size: 25px;
+  color: #000000;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 5px;
+}
+
+header .location-field{
+  background: #ffffff;
+  border: #000000 1px solid;
+  width: 425px;
+}
+
+main{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 5px;
+}
+
+main .column1, .column2{
+  background: #ffffff;
+  border: #666666 1px solid;
+  width: 425px;
+  float: left;
+}
+
+main span{
+  float: right;
+  color: #afafaf;
+}
+
+main .tc-items{
+  margin: 2px;
+  background: #ffffff;
+}
+main .tc-items.set{
+  background: #62afe294;
+}
+
+.tc-items.folder{
+  color: #1f50f3;
+}

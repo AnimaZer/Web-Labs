@@ -1,14 +1,16 @@
 body {
   margin: auto;
   width: 60%;
+
 }
-.calendar {
-  font-family: "Montserrat", sans-serif;
+.calendar-block {
+  font-family: 'Montserrat', sans-serif;
   background: #dedede;
   height: auto;
+  width: 100%;
   padding: 2px;
   display: grid;
-  width: 100%;
+  
 }
 
 .calendar-head {
@@ -20,104 +22,103 @@ body {
 
 .calendar-month {
   font-size: 24px;
-  padding: 10px;
+  padding: 10px; 
   padding-bottom: 0;
   background: white;
+  color: black;
 }
 
-.weekday {
-  width: calc(100% / 7 - 22px);
+.calendar-item {
+  float: left;
+  text-align: right;
+  padding: 10px;
+  
+}
+
+
+.calendar-day-name {
+  width: calc(100% / 7 - 20px);
   position: relative;
+  background: white;
+  color: black;
 }
 
 .calendar-day {
   height: 60px;
   background: white;
-  margin: 1px;
   width: calc(100% / 7 - 22px);
   position: relative;
-}
+  border: 1px solid #d3d3d3;
+  border-collapse: collapse;
 
-.calendar-day,
-.weekday {
-  float: left;
-  text-align: right;
-  padding: 10px;
-}
-
-.calendar-day.weekday {
-  width: calc(100% / 7 - 22px);
-  margin: 1px;
-}
-
-.calendar-day.weekday,
-.holiday {
-  background: white;
-  color: #b5b5b5;
 }
 
 .calendar-day.holiday {
   background: #ededed;
-  color: #a76666;
+  color: #8f8f8f;
+}
+
+.calendar-day-name.holiday {
+  color: #b5b5b5;
 }
 
 .calendar-day.other-month {
-  color: #a09e9e;
+  color: #b5b5b5;
 }
 
-.calendar-day.holiday.other-month {
-  color: #9c7d7d;
-}
 /* DARKMODE ONN */
-.calendar-day.calendar-dark {
+
+.calendar.dark .calendar-item,
+.calendar-head {
   background: #444444;
   color: #ededed;
 }
 
-.calendar.calendar-dark {
+.calendar.dark .calendar-month {
+  background: #444444;
+  color: #ededed;
+}
+
+.calendar.dark {
   background: black;
 }
 
-.calendar-head.calendar-dark {
-  background: #444444;
-}
-
-.calendar-month.calendar-dark,
-.weekday.calendar-dark {
-  background: #444444;
-  color: #ededed;
-}
-
-.calendar-weekday-names.calendar-dark {
-  background: black;
-}
-
-.calendar-day.calendar-dark {
-  background: #444444;
-  color: #ededed;
-}
-
-.calendar-day.holiday.calendar-dark {
+.calendar.dark .calendar-day.holiday {
   background: #555555;
   color: #adadad;
 }
-.weekday.calendar-dark {
-  background: #444444;
-  color: #ededed;
-}
-.calendar-day.other-month.calendar-dark {
+
+.calendar.dark .calendar-day.other-month {
   color: #706f6f;
 }
 
-.weekday.holiday.calendar-dark {
-  background: #444444;
+.calendar.dark .weekday.holiday {
   color: #ff4040;
 }
+
 /* DARKMODE OFF */
-.today span {
-  width: 100%;
-  background: #f33232;
-  padding: 3px 6px;
+
+.calendar-holiday {
+  font-size: 0.55em;
+  border-radius: 5px;
+  background: rgba(255, 135, 135, 0.6);
+  padding: 1px 3px;
+  position: absolute;
+  bottom: 3px;
+  right: 3px;
+}
+
+.calendar-day.today span {
+  background: #ff4040;
+  padding: 5px;
   border-radius: 100%;
   color: #fff;
+}
+
+#feast {
+  border-radius: 5px;
+  background: #fa8c8c;
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
 }
