@@ -8,6 +8,15 @@
   color: #000000;
 }
 
+h2{
+  margin: 0;
+  padding: 0;
+}
+
+/* .location-field{
+  in
+} */
+
 header{
   display: flex;
   flex-direction: row;
