@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,121 +8,140 @@
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <title>AniShop</title>
 </head>
-<body class="flex-container">
+
+<body>
   <div class="container">
 
-  <header>
+    <header>
 
-    <div id="store-logo" class="flex-block"> 
-      <a href="index.html">
-        <img src="images/store-logo.png" alt="Home">
-        <strong>AniShop</strong>
-      </a>
-    </div>
-
-    <div id="store-search" class="flex-block">
-            <input name="s" placeholder="Искать здесь..." type="search">
-            <button type="submit">Поиск</button>
-    </div>
-
-    <div id="store-basket" class="flex-block">
+      <div class="store-logo">
         <a href="index.html">
-            <img src="images/store-basket.png" alt="Home">
-          </a>
-    </div>
+          <img src="images/store-logo.png" alt="Home">
+          <strong>AniShop</strong>
+        </a>
+      </div>
 
-  </header>
+      <div class="store-search">
+        <input placeholder="Искать здесь..." type="search">
+        <button type="submit">Поиск</button>
+      </div>
 
-  <main>
+      <div class="store-basket">
+        <a href="index.html">
+          <img src="images/store-basket.png" alt="Home">
+        </a>
+      </div>
 
-    <div id="store-menu" class="flex-block">
-      <strong>Categories: </strong>
+    </header>
+
+    <main>
+
+      <div class="store-menu">
+        <strong>Categories: </strong>
         <nav>
-            <a href="">Electronics</a>
-            <a href="">Appliances</a>
-            <a href="">category 1</a>
-            <a href="">category 2</a>
-            <a href="">category 3</a>
-            <a href="">category 4</a>
-          </nav>
-    </div>
+          <a href="">Electronics</a>
+          <a href="">Appliances</a>
+          <a href="">category 1</a>
+          <a href="">category 2</a>
+          <a href="">category 3</a>
+          <a href="">category 4</a>
+        </nav>
+      </div>
 
-    <section class="store-goods">
+      <section class="store-products">
 
-        <div class="flex-block store-items">
-            <a href="product.html">
-              <img src="images/store-item.jpg" alt="shop item">
-              <p class="item-description">Нужная фиговина</p>
-            </a>
-            <a class="item-add" href="">Add to cart</a>
+        <div class="store-item">
+          <div class="store-item_image">
+            <img src="images/store-item.jpg" alt="shop item">
           </div>
-          
-        <div class="flex-block store-items">
-            <a href="product.html">
-              <img src="images/store-item.jpg" alt="shop item">
-              <p class="item-description">Вторая нужная фиговина</p>
-            </a>
-            <a class="item-add" href="">Add to cart</a>
-          </div>
+          <a href="product.html">
+            <p class="item-description">Нужная фиговина</p>
+          </a>
+          <button class="item-add">Add to cart</button>
+        </div>
 
-        <div class="flex-block store-items">
-            <a href="product.html">
-              <img src="images/store-item.jpg" alt="shop item">
-              <p class="item-description">Чем тебе не понравились первые 2 товара?</p>
-            </a>
-            <a class="item-add" href="">Add to cart</a>
+        <div class="store-item">
+          <div class="store-item_image">
+            <img src="images/store-item.jpg" alt="shop item">
           </div>
+          <a href="product.html">
+            <p class="item-description">Вторая нужная фиговина</p>
+          </a>
+          <button class="item-add">Add to cart</button>
+        </div>
 
-        <div class="flex-block store-items">
-            <a href="product.html">
-              <img src="images/store-item.jpg" alt="shop item">
-              <p class="item-description">Что? да там тоже самое</p>
-            </a>
-            <a class="item-add" href="">Add to cart</a>
+        <div class="store-item">
+          <div class="store-item_image">
+            <img src="images/store-item.jpg" alt="shop item">
           </div>
+          <a href="product.html">
+            <p class="item-description">Чем тебе не понравились первые 2 товара?</p>
+          </a>
+          <button class="item-add">Add to cart</button>
+        </div>
 
-        <div class="flex-block store-items">
-            <a href="product.html">
-              <img src="images/store-item.jpg" alt="shop item">
-              <p class="item-description">Не, ну тебе серьезно нравятся одинаковые товары?</p>
-            </a>
-            <a class="item-add" href="">Add to cart</a>
+        <div class="store-item">
+          <div class="store-item_image">
+            <img src="images/store-item.jpg" alt="shop item">
           </div>
+          <a href="product.html">
+            <p class="item-description">Что? да там тоже самое</p>
+          </a>
+          <button class="item-add">Add to cart</button>
+        </div>
 
-        <div class="flex-block store-items">
-            <a href="product.html">
-              <img src="images/store-item.jpg" alt="shop item">
-              <p class="item-description">Я тебя понял! Это нужная фиговина, купи меня!</p>
-            </a>
-            <a class="item-add" href="">Add to cart</a>
+        <div class="store-item">
+          <div class="store-item_image">
+            <img src="images/store-item.jpg" alt="shop item">
           </div>
+          <a href="product.html">
+            <p class="item-description">Не, ну тебе серьезно нравятся одинаковые товары?</p>
+          </a>
+          <button class="item-add">Add to cart</button>
+        </div>
 
-        <div class="flex-block store-items">
-            <a href="product.html">
-              <img src="images/store-item.jpg" alt="shop item">
-              <p class="item-description">Значит тебя и это не остановило?</p>
-            </a>
-            <a class="item-add" href="">Add to cart</a>
+        <div class="store-item">
+          <div class="store-item_image">
+            <img src="images/store-item.jpg" alt="shop item">
           </div>
+          <a href="product.html">
+            <p class="item-description">Я тебя понял! Это нужная фиговина, купи меня!</p>
+          </a>
+          <button class="item-add">Add to cart</button>
+        </div>
 
-        <div class="flex-block store-items">
-            <a href="product.html">
-              <img src="images/store-item.jpg" alt="shop item">
-              <p class="item-description">Ну все, следующий товар будет последним!</p>
-            </a>
-            <a class="item-add" href="">Add to cart</a>
+        <div class="store-item">
+          <div class="store-item_image">
+            <img src="images/store-item.jpg" alt="shop item">
           </div>
+          <a href="product.html">
+            <p class="item-description">Значит тебя и это не остановило?</p>
+          </a>
+          <button class="item-add">Add to cart</button>
+        </div>
 
-        <div class="flex-block store-items">
-            <a href="product.html">
-              <img src="images/store-item.jpg" alt="shop item">
-              <p class="item-description">Нужная фиговина. Я тебя предупреждал, что этот товар паоследний</p>
-            </a>
-            <a class="item-add" href="">Add to cart</a>
+        <div class="store-item">
+          <div class="store-item_image">
+            <img src="images/store-item.jpg" alt="shop item">
           </div>
-    </section>
-  </main>
-  <footer></footer>
-</div>
+          <a href="product.html">
+            <p class="item-description">Ну все, следующий товар будет последним!</p>
+          </a>
+          <button class="item-add">Add to cart</button>
+        </div>
+
+        <div class="store-item">
+          <div class="store-item_image">
+            <img src="images/store-item.jpg" alt="shop item">
+          </div>
+          <a href="product.html">
+            <p class="item-description">Нужная фиговина. Я тебя предупреждал, что этот товар паоследний</p>
+          </a>
+          <button class="item-add">Add to cart</button>
+        </div>
+      </section>
+    </main>
+  </div>
 </body>
+
 </html>
