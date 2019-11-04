@@ -1,4 +1,4 @@
-.container{
+.container {
   width: 900px;
   margin: auto;
   background: #afafaf;
@@ -8,16 +8,13 @@
   color: #000000;
 }
 
-h2{
+.tc-name h2 {
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
-/* .location-field{
-  in
-} */
-
-header{
+.container_header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -25,40 +22,46 @@ header{
   margin: 5px;
 }
 
-header .location-field{
+.container_header .location-field {
   background: #ffffff;
   border: #000000 1px solid;
   width: 425px;
 }
 
-main{
+.container_body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 5px;
+  flex-basis: 50%;
 }
 
-main .column1, .column2{
+.container_body .user-loc,
+.root-loc {
   background: #ffffff;
   border: #666666 1px solid;
   width: 425px;
   float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-main span{
+.container_body span {
   float: right;
   color: #afafaf;
 }
 
-main .tc-items{
+.container_body .tc-items {
   margin: 2px;
   background: #ffffff;
 }
-main .tc-items.set{
+
+.container_body .tc-items.set {
   background: #62afe294;
 }
 
-.tc-items.folder{
+.tc-items.folder {
   color: #1f50f3;
 }
