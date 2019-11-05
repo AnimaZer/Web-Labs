@@ -8,18 +8,19 @@
   color: #000000;
 }
 
-.total-commander-name, .total-commander-name h2 {
+.total-commander-title,
+.total-commander-title h2 {
   margin: 0;
   padding: 0;
   width: 100%;
 }
 
 .total-commander-header {
-  display: inline-flex;
+  /* display: inline-flex; */
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 5px;
+  /* margin: 5px; */
 }
 
 /* .total-commander-locations{
@@ -35,9 +36,11 @@
   background: #ffffff;
   border: #000000 1px solid;
   width: 425px;
+  /* display: flex;
+  flex-wrap: nowrap; */
 }
 
-.total-commander-body {
+.total-commander-block {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -46,7 +49,7 @@
   flex-basis: 50%;
 }
 
-.total-commander-body .directory-content {
+.total-commander-block .directory-content {
   background: #ffffff;
   border: #666666 1px solid;
   width: 425px;
@@ -56,17 +59,17 @@
   justify-content: flex-start;
 }
 
-.total-commander-body span {
+.total-commander-block span {
   float: right;
   color: #afafaf;
 }
 
-.total-commander-body .total-commander-item {
+.total-commander-block .total-commander-item {
   margin: 2px;
   background: #ffffff;
 }
 
-.total-commander-body .total-commander-item.set {
+.total-commander-block .total-commander-item.selected {
   background: #62afe294;
 }
 
