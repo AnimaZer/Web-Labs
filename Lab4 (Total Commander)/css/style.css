@@ -8,27 +8,36 @@
   color: #000000;
 }
 
-.tc-name h2 {
+.total-commander-name, .total-commander-name h2 {
   margin: 0;
   padding: 0;
   width: 100%;
 }
 
-.container_header {
-  display: flex;
+.total-commander-header {
+  display: inline-flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 5px;
 }
 
-.container_header .location-field {
+/* .total-commander-locations{
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 5px;
+  flex-basis: 50%;
+} */
+
+.location-field {
   background: #ffffff;
   border: #000000 1px solid;
   width: 425px;
 }
 
-.container_body {
+.total-commander-body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -37,8 +46,7 @@
   flex-basis: 50%;
 }
 
-.container_body .user-loc,
-.root-loc {
+.total-commander-body .directory-content {
   background: #ffffff;
   border: #666666 1px solid;
   width: 425px;
@@ -48,20 +56,20 @@
   justify-content: flex-start;
 }
 
-.container_body span {
+.total-commander-body span {
   float: right;
   color: #afafaf;
 }
 
-.container_body .tc-items {
+.total-commander-body .total-commander-item {
   margin: 2px;
   background: #ffffff;
 }
 
-.container_body .tc-items.set {
+.total-commander-body .total-commander-item.set {
   background: #62afe294;
 }
 
-.tc-items.folder {
+.total-commander-item.folder {
   color: #1f50f3;
 }
