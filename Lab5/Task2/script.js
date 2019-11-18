@@ -2,7 +2,7 @@ var cashbox = {
   amount: 0,
   addPayment: function (payment) {
     // your code
-    if (payment.info !== 0) {
+    if (payment.info) {
       if (payment.amount > 0 && typeof payment.amount === 'number') {
         this.amount = this.amount + payment.amount;
         console.log('Баланс кассы: ' + this.amount + ' руб.');
@@ -14,7 +14,7 @@ var cashbox = {
   },
   refundPayment: function (refund) {
     // your code
-    if (refund.info !== 0) {
+    if (refund.info) {
       if (this.amount > 0 && this.amount - refund.amount >= 0) {
         this.amount = this.amount - refund.amount;
         console.log('Баланс кассы: ' + this.amount + ' руб.');
