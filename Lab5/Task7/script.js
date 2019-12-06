@@ -13,7 +13,7 @@ function gameStart() {
     shot: function (x, y) {
       console.log(x, y);
     },
-    spawn: function () {
+    spawn: function (areaSize) {
       this.currentCoordinates.x = Math.floor(Math.random() * 10);
       this.currentCoordinates.y = Math.floor(Math.random() * 10);
       console.log(this.name + ' spawned in coordinates: (' + this.currentCoordinates.x + '; ' + this.currentCoordinates.y + ');');
@@ -46,6 +46,15 @@ function gameStart() {
 
   setInterval(function () {
     if (sovietTank.health > 0 && germanTank.health > 0) {
+      var shotCoordintaes = soldier1.shot();
+      // soldier2.feel(shotCoordintaes);
+
+      // soldier2.shot();
+      // soldier1.feel();
+
+
+
+
       var shotX = Math.floor(Math.random() * 10);
       var shotY = Math.floor(Math.random() * 10);
 
