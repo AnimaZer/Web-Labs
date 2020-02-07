@@ -22,23 +22,23 @@ body {
   margin-bottom: 20px;
 }
 
-.navbar img {
+.navbar-container_logo {
   width: 100px;
 }
 
-.navbar nav {
+.main-nav {
   float: right;
   margin-top: 7px;
 }
 
-.navbar nav a {
+.main-nav_link {
   color: rgb(163, 163, 163);
   text-decoration: none;
   margin-left: 10px;
   padding: 10px 15px;
 }
 
-.navbar nav a.active {
+.main-nav_link--active {
   color: black;
 }
 
@@ -47,40 +47,40 @@ body {
   padding: 20px 25px;
 }
 
-.blog-info .blog-info-img-wrapper {
+.user {
   text-align: center;
 }
 
-.blog-info img {
+.user_avatar {
   width: 150px;
 }
 
-.blog-info .blog-info-social {
+.social {
   margin: 10px;
 }
 
-.blog-info .blog-info-social a {
+.social-link {
   text-decoration: none;
   font-size: 30px;
   text-align: center;
 }
 
-.blog-info .blog-info-divider {
+.blog-info_divider {
   width: 80px;
   border-top: 2px solid grey;
 }
 
-.container-posts .container-post {
+.post {
   background-color: white;
   padding: 15px;
   margin-bottom: 20px;
 }
 
-.container-posts .container-post img {
+.post_image {
   width: 100%;
 }
 
-.container-posts .container-post h2 {
+.post_title {
   margin-top: 0;
 }
 
@@ -105,11 +105,11 @@ body {
     width: 250px;
   }
 
-  .container-posts {
+  .posts {
     padding-left: 300px;
   }
 
-  .container-posts .container-post img {
+  .post_image {
     float: left;
     width: 250px;
   }
